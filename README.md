@@ -1,4 +1,4 @@
-### Intelligent_Power_Management
+# Intelligent_Power_Management
 
 Envision a day without electricity! Even a day in our life is hard to imagine without it. But are we concerned about it? Let’s look into it. Many of us leave the mobile, laptop, or any other similar device for an excess amount of time to fully charge the device. But this results in loss of battery life and electricity wastage. In the long-term, it costs you even considerable amount of money. Efficient Energy Management plays a vital role in the improvement of power consumption and power measurement. To fulfil this problem, we have developed an intelligent smart socket. The system uses the IoT Power Socket as a bridge to control the power outlet over the Internet. With the integration of Blynk cloud technology, the user can use the customized Blynk project to send commands to switch off or on the IoT Power socket. It also comes with a timer  feature. With the availability of the timer feature, the device can allow the power at a specified time intervals set by the user at any point of a day. The user is also provided with the control to stop the power supply before the end time. The advantage of this model is that it allows the power supply to the device (Mobile / Laptop) up to a threshold value specified by the user.
 
@@ -10,7 +10,7 @@ The lists of the components used to build the model are listed below:
 • Jumper wires
 • Socket
 
-# Hardware Requirements
+## Hardware Requirements
 S.NO Product Function
 1. Esp32 Micro controller used to connect to Wi-Fi and perform basic computation.
 2. Relay 5V relay module used to control current to modules.
@@ -22,16 +22,18 @@ The major component of the design is a Esp32 microcontroller. It connects to Wi-
 supply on or off. 
 
 
-#Software Requirements
+## Software Requirements
 
-S.NO Product Function
-1.. Arduino IDE It is used to program the esp32.
-2. Blynk App It helps user to interact with the model.
+| S.No  | Product | Function  |
+| ------------- | ------------- | ------------- |
+| 1  | Arduino IDE  | It is used to program the esp32.  | 
+| 2  | Blynk App  | It helps user to interact with the model. | 
 
 
 Arduino IDE allows developers to programme microcontrollers based on their intended use. Blynk offers a wide range of options for managing and monitoring IoT devices. Create a project for the model by downloading a mobile app to your phone. Use the Blynk app to access the available widgets. Set the virtual pins and remember to keep track of them in the code.
 
-#Flow Diagram
+# Flow Diagram
+
 ![image](https://github.com/saiteja-kothakota/Intelligent_Power_Management/assets/68795720/ddd7f062-da87-41e0-bb38-fd760dede950)
 
 The above flow chart gives us the sequence of actions done. Client sends the battery and charging status to the esp32. Blynk communicates with esp32 to send and receive requests. If the Blynk app is not modified or accessed and the battery percentage of the device reaches to 100 percentage then socket is turned OFF else device is in charging state. If the threshold value is updates and if current battery percentage is less than the threshold limit then socket is turned OFF, else the device will be continued in charging state. When the current time matches with the start time then socket is turned ON and when the current time matches with the end time then socket is turned OFF. If you want to set the device in charging state access the button to turn it ON and vice-versa to disable charging. 

@@ -4,11 +4,11 @@ Envision a day without electricity! Even a day in our life is hard to imagine wi
 
 
 The lists of the components used to build the model are listed below:\
-_ ESP32
-_ Breadboard
-_ 5VRelay
-_ Jumper wires
-_ Socket
+    ESP32 \
+    Breadboard\
+    5VRelay \
+    Jumper wires\
+    Socket\
 
 ## Hardware Requirements
 S.NO Product Function

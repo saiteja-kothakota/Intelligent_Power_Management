@@ -11,14 +11,17 @@ The lists of the components used to build the model are listed below:\
     Socket
 
 ## Hardware Requirements
-S.NO Product Function
-1. Esp32 Micro controller used to connect to Wi-Fi and perform basic computation.
-2. Relay 5V relay module used to control current to modules.
-3. AC Plug Receives AC power supply from the main source.
-4. Socket Transmits AC power supply to the device.
-5. Jumper Wires These are used to connect components in the model.
 
-The major component of the design is a Esp32 microcontroller. It connects to Wi-Fi and is capable of performing calculations. The ESP32 Board runs on a voltage range of 2.2 to 3.6 volts. However, we provide 5V via the Micro-USB connector. There is already an LDO voltage regulator for 3.3V to keep the voltage constant. The ESP32 is powered by a Micro USB connector and a VIN pin (External Supply Pin). ESP32 requires 600mA of electricity since it draws up to 250mA during RF broadcasts. It draws more than 200mA current during boot or Wi-Fi operation. As a result, when we add several sensors or modules to the ESP32 Board, the power supplied by the Micro-USB Cable is insufficient. This is due to the fact that the USB port on a computer can only produce 500mA of current. Since there are no sensors in this project, powering the circuit with a USB connection is sufficient. Relays open and close connections in another circuit to control one electrical circuit. At the top of the relay, the maximum operating current and voltage for both AC and DC loads are also listed. A 5V active high or low signal, in other words, activates the relay by energising its coil. It has three terminals: NC, NO, and COM. It receives signals from the esp32 to turn the power
+| S.No | Product | Function  |
+| ------------- | ------------- | ------------- |
+| 1 | ESP32  | Micro controller used to connect to Wi-Fi and perform basic computation. | 
+| 2 | Relay 5V | relay module used to control current to modules. | 
+| 3 | AC Plug | Receives AC power supply from the main source.  | 
+| 4 | Socket| Transmits AC power supply to the device. | 
+| 5 | Jumper Wires  | These are used to connect components in the model. |
+
+
+The major component of the design is a ESP32 microcontroller. It connects to Wi-Fi and is capable of performing calculations. The ESP32 Board runs on a voltage range of 2.2 to 3.6 volts. However, we provide 5V via the Micro-USB connector. There is already an LDO voltage regulator for 3.3V to keep the voltage constant. The ESP32 is powered by a Micro USB connector and a VIN pin (External Supply Pin). ESP32 requires 600mA of electricity since it draws up to 250mA during RF broadcasts. It draws more than 200mA current during boot or Wi-Fi operation. As a result, when we add several sensors or modules to the ESP32 Board, the power supplied by the Micro-USB Cable is insufficient. This is due to the fact that the USB port on a computer can only produce 500mA of current. Since there are no sensors in this project, powering the circuit with a USB connection is sufficient. Relays open and close connections in another circuit to control one electrical circuit. At the top of the relay, the maximum operating current and voltage for both AC and DC loads are also listed. A 5V active high or low signal, in other words, activates the relay by energising its coil. It has three terminals: NC, NO, and COM. It receives signals from the esp32 to turn the power
 supply on or off. 
 
 

@@ -3,7 +3,7 @@
 Envision a day without electricity! Even a day in our life is hard to imagine without it. But are we concerned about it? Let’s look into it. Many of us leave the mobile, laptop, or any other similar device for an excess amount of time to fully charge the device. But this results in loss of battery life and electricity wastage. In the long-term, it costs you even considerable amount of money. Efficient Energy Management plays a vital role in the improvement of power consumption and power measurement. To fulfil this problem, we have developed an intelligent smart socket. The system uses the IoT Power Socket as a bridge to control the power outlet over the Internet. With the integration of Blynk cloud technology, the user can use the customized Blynk project to send commands to switch off or on the IoT Power socket. It also comes with a timer  feature. With the availability of the timer feature, the device can allow the power at a specified time intervals set by the user at any point of a day. The user is also provided with the control to stop the power supply before the end time. The advantage of this model is that it allows the power supply to the device (Mobile / Laptop) up to a threshold value specified by the user.
 
 
-The lists of the components used to build the model are listed below:
+The lists of the components used to build the model are listed below:\
 • ESP32
 • Breadboard
 • 5VRelay
